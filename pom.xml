@@ -17,4 +17,10 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>12</java.version>
     </properties>
+    
+    <modules>
+        <module>KafkaAdapter</module>
+        <module>KafkaProducer</module>
+        <module>KafkaConsumer</module>
+    </modules>
 </project>
