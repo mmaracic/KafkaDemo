@@ -1,0 +1,26 @@
+hal:
+  dps:
+    kafka:
+      bootstrap-servers: localhost:39092 #port has to be the same as defined in @EmbeddedKafka annotation
+      partition:
+        number: 1
+        replication: 1
+      retry:
+        time: 2000
+        count: 1
+      topics: testTopic
+      consumerGroup: testConsumerGroup
+
+spring:
+  kafka:
+    producer:
+      transaction-id-prefix: tx-
+      
+logging:
+  level:
+    hr:
+      ht:
+        hal:
+          dps:
+            pf:
+              kafka: DEBUG
